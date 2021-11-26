@@ -324,7 +324,7 @@ $.oFolder.prototype.create = function(){
  * @param   {bool}     [overwrite]           Whether to overwrite the target.
  */
 $.oFolder.prototype.copy = function( folderPath, copyName, overwrite ){
-    // TODO: right now it wont overwrite any files. It copy the missing folders and files and left the existing ones untouched
+    // TODO: right now it wont overwrite any files. It copies the missing folders and files and leave the existing ones untouched
     // TODO: it should propagate errors from the recursive copy and throw them before ending?
     if (typeof overwrite === 'undefined') var overwrite = false;
     if (typeof copyName === 'undefined') var copyName = this.name;
